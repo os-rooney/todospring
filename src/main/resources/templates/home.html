@@ -9,5 +9,13 @@
 </head>
 <body>
     <h1>Hello World</h1>
+    <div class="todo-formular">
+        <form th:action="@{/result}" method="post">
+            <label>Aufgabe:
+                <input type="text" th:field="${aufgabeDTO.aufgabe}" placeholder="bitte geben Sie etwas ein">
+            </label>
+            <input type="submit">
+        </form>
+    </div>
 </body>
 </html>
